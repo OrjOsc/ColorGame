@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5f;            // "f" stands for float, only used with float variables
+    public float moveSpeed = 5f;    // "f" stands for float, only used for float variables
     public float jumpForce = 10f;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
-    private Rigidbody2D rb;
-    private bool isGrounded;
+    private Rigidbody2D rb;         // "rb" stands for RigidBody
+    private bool isGrounded;        // bool = true or false ; In this case, is the player grounded or not?
 
     private Animator animator;
 
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();   // We assign the "rb" variable to the "Rigidbody 2D" component in "Player"
         animator = GetComponent<Animator>();
         extraJumps = extraJumpsValue;
     }
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         float moveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y); // "Vector2" means it's  a 2D direction
 
         if(isGrounded)
         {
