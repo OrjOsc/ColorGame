@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 5f;            // "f" stands for float, only used with float variables
     public float jumpForce = 10f;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
@@ -16,6 +16,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public int extraJumpsValue = 1;
     private int extraJumps;
 
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,6 +24,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         extraJumps = extraJumpsValue;
     }
 
+    // Update is called once per frame
     void Update()
     {
         float moveInput = Input.GetAxis("Horizontal");
