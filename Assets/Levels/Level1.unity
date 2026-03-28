@@ -482,12 +482,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6447722072507503168, guid: 10f3cacccb0c4c547be76836eba20664, type: 3}
+  m_Sprite: {fileID: -3427766298142374221, guid: 51c824a1d3487694f891f2f744e8c733, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.97, y: 1.05}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: 5
-  jumpForce: 10
+  jumpHeight: 10
   groundCheck: {fileID: 878196955}
   groundCheckRadius: 0.2
   groundLayer:
@@ -584,8 +584,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.031508505, y: 0}
-  m_Size: {x: 0.8128482, y: 1}
+  m_Offset: {x: -0.002923131, y: -0.06479344}
+  m_Size: {x: 0.87001896, y: 0.8704128}
   m_Direction: 0
 --- !u!1 &878196954
 GameObject:
